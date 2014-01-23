@@ -17,7 +17,7 @@ main :: IO ()
 main = startGUI defaultConfig { tpPort = 10000 } setup
 
 data Gender = Male | Female
-  deriving (Eq)
+  deriving (Eq, Show)
 
 charToInt :: Char -> Int
 charToInt = read . (:[])
